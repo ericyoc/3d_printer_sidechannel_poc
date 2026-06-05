@@ -44,9 +44,6 @@ We use the **Madamopoulos–Tsoutsos 2024 dataset** (open access):
 
 ```
 ├── 3D_Printer_SideChannel_Study.ipynb   # Main Google Colab notebook
-├── printer_sidechannel.tex              # IEEE Transactions LaTeX manuscript
-├── references.bib                       # BibTeX references (35+ citations)
-├── README.md                            # This file
 └── figures/                             # Publication figures (PNG, 300 DPI)
     ├── fig1_pca_col1.png                # Pre-attack PCA discriminability
     ├── fig2_accuracy_col1.png           # Accuracy by condition
