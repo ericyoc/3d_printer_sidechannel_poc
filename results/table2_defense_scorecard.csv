@@ -1,0 +1,8 @@
+Evaluation Criterion,Result,Value
+"Attack successful (acoustic, pre-defense)",No,9.8%
+Attack successful (vibration-only),Yes,100.0%
+"Attack successful (fused, pre-defense)",Yes,100.0%
+AMNC reduces acoustic accuracy (>= 20 pp),No,-1.4 pp
+Attack still successful post-defense (acoustic),No,11.2%
+Fused attack defeats AMNC defense,Yes,100.0%
+Defense successful overall (no attack >= threshold),No,All modalities < threshold

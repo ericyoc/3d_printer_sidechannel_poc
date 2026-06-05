@@ -1,0 +1,19 @@
+{
+  "dataset": "Madamopoulos & Tsoutsos 2024 \u2014 Zenodo 13329934",
+  "n_samples": 143,
+  "n_objects": 12,
+  "cv_folds": 5,
+  "classifier": "RandomForestClassifier(n_estimators=200)",
+  "amnc_model": "Notch filter bank: 120,180,240,300,360 Hz (Q=30)",
+  "attack_threshold_pct": 70.0,
+  "defense_threshold_pp": 20.0,
+  "results_summary": {
+    "acoustic_pre": 9.79,
+    "vibration": 100.0,
+    "fused_pre": 100.0,
+    "acoustic_post": 11.19,
+    "fused_post": 100.0,
+    "amnc_delta_audio": -1.4,
+    "amnc_delta_fused": 0.0
+  }
+}

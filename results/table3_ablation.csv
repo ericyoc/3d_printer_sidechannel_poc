@@ -1,0 +1,18 @@
+Classifier,Channel,Accuracy,F1 (macro)
+Random Forest,Acoustic-Only,9.79,9.42
+Random Forest,Vibration-Only,100.0,100.0
+Random Forest,Fused,100.0,100.0
+Gradient Boost,Acoustic-Only,11.19,11.31
+Gradient Boost,Vibration-Only,100.0,100.0
+Gradient Boost,Fused,100.0,100.0
+SVM (RBF),Acoustic-Only,9.79,9.5
+SVM (RBF),Vibration-Only,100.0,100.0
+SVM (RBF),Fused,48.25,48.51
+KNN (k=5),Acoustic-Only,6.29,6.46
+KNN (k=5),Vibration-Only,100.0,100.0
+KNN (k=5),Fused,12.59,13.32
+Random Forest,Vibration X-axis Only,100.0,100.0
+Random Forest,Vibration Y-axis Only,100.0,100.0
+Random Forest,Vibration Z-axis Only,100.0,100.0
+Random Forest,Vibration-Only (Bambu_A1mini),100.0,100.0
+Random Forest,Vibration-Only (Bambu_P1P),100.0,100.0
