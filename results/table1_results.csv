@@ -1,6 +1,0 @@
-Phase,Condition,Accuracy,F1 (macro),Precision,Recall,Attack Success
-Post-Attack,Acoustic-Only (Pre-Defense),9.79,9.42,9.48,9.91,No
-Post-Attack,Vibration-Only,100.0,100.0,100.0,100.0,Yes
-Post-Attack,Fused (Pre-Defense),100.0,100.0,100.0,100.0,Yes
-Post-Defense,Acoustic-Only (Post-Defense),11.19,11.18,11.36,11.17,No
-Post-Defense,Fused (Post-Defense),100.0,100.0,100.0,100.0,Yes
