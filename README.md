@@ -87,6 +87,10 @@ The pipeline runs five analyses:
 
 ## Methods
 
+### Recording Pairing
+
+Each recording session stores its audio alongside its own accelerometer capture. Every audio file is paired with the `.csv` capture in its **own session folder**, yielding 144 distinct audio–vibration pairs (6 per object per printer). Each recording is treated as a single labeled sample, and all samples derived from a recording are grouped together so that no recording is split across cross-validation folds.
+
 ### Feature Extraction
 
 | Channel | Features | Dimensionality |
@@ -132,6 +136,14 @@ Classifier ablation on vibration summary features (pooled):
 | KNN (k=5) | 11.11 |
 
 Cross-printer transfer (vibration): A1 Mini → P1P = 11.11%, P1P → A1 Mini = 12.50% — near chance, confirming device specificity.
+
+---
+
+## Applications & Security Implications
+
+- **AMNC is an acoustic-only control.** It neutralizes the channel it targets but leaves structural vibration untouched. Mitigating the vibration channel requires dedicated measures — chassis-level isolation (damping feet, anti-vibration mounts), randomized stepper-acceleration profiles that de-correlate motion from toolpath geometry, or active vibration masking — each trading against print quality, speed, or hardware cost.
+- **Device specificity is a defensive lever.** Vibration signatures do not transfer across printer architectures (cross-printer accuracy 11–12.5%), so a heterogeneous printer fleet imposes a per-device calibration cost on an attacker and provides partial natural protection that a homogeneous fleet does not.
+- **Bounded threat.** The demonstrated capability is closed-set *identification* — confirming which of a set of known designs is on the bed — not reconstruction of unknown geometry. This supports monitoring or espionage against a known design catalog. The temporal result shows geometry-correlated information survives into the vibration channel, marking reconstruction (e.g., with the magnetic/power channels AMNC does not suppress) as the natural escalation.
 
 ---
 
