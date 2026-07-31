@@ -18,7 +18,7 @@ AMNC is treated throughout as a **noise-reduction feature**. We located no paten
 
 **Print duration is the dominant discriminator** — **63.89%** from recording length alone, validated against sliced G-code print time at *r* = 0.907. No acoustic countermeasure addresses it, and an adversary obtains it from start and stop times alone.
 
-**Vibration carries geometry information independent of duration** (45.83% under an equalised observation window, *p* = 0.023) but adds nothing measurable beyond duration in paired comparison.
+**Vibration carries geometry information independent of duration** (45.83% under an equalized observation window, *p* = 0.023) but adds nothing measurable beyond duration in paired comparison.
 
 **A consumer handset performs as well as a mounted accelerometer** (25.00% vs 26.39%), and **leakage is architecture-specific** — present on the core-XY P1P, not distinguishable from chance on the bed-slinger A1 Mini.
 
@@ -47,7 +47,7 @@ Simulated notch bank stays near baseline across quality factors (13.89 / 13.19 /
 |---|---|---|
 | **Print duration alone** | **63.89%** | [55.78, 71.28] |
 | Vibration, full recording | 29.17% | [22.36, 37.05] |
-| Vibration, window equalised | 22.22% | [16.20, 29.68] |
+| Vibration, window equalized | 22.22% | [16.20, 29.68] |
 | — amplitude only | 26.39% | [19.87, 34.13] |
 | — frequency (Hz) only | 9.03% | [5.35, 14.83] |
 
@@ -65,7 +65,7 @@ G-code validation: Pearson *r* = 0.9073, Spearman ρ = 0.8933, n = 144.
 | **T2** | **Vibration, window equalized to 543 s** | **45.83%**, *p* = 0.023 |
 | T3 | Duration-overlap subset — **control failed** | 60.34% duration-only |
 
-T1 shows sensor features never correct a duration-only error: the McNemar bottom-left cell is **zero** for every combination. T2 is the duration-equalised evidence of geometry-dependent vibration leakage. T3 was inconclusive and is not relied upon.
+T1 shows sensor features never correct a duration-only error: the McNemar bottom-left cell is **zero** for every combination. T2 is the duration-equalized evidence of geometry-dependent vibration leakage. T3 was inconclusive and is not relied upon.
 
 ### Per capture configuration and per device
 
