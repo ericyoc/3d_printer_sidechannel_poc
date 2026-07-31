@@ -62,7 +62,7 @@ G-code validation: Pearson *r* = 0.9073, Spearman ρ = 0.8933, n = 144.
 | T1 | Duration + acoustic | 56.25% |
 | T1 | Duration + both | 50.00% |
 | — | Fixed 60–120 s offset acoustic window | 31.25%, CI [19.95, 45.33] — includes chance |
-| **T2** | **Vibration, window equalised to 543 s** | **45.83%**, *p* = 0.023 |
+| **T2** | **Vibration, window equalized to 543 s** | **45.83%**, *p* = 0.023 |
 | T3 | Duration-overlap subset — **control failed** | 60.34% duration-only |
 
 T1 shows sensor features never correct a duration-only error: the McNemar bottom-left cell is **zero** for every combination. T2 is the duration-equalised evidence of geometry-dependent vibration leakage. T3 was inconclusive and is not relied upon.
