@@ -4,7 +4,7 @@
 [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ericyoc/3d_printer_sidechannel_poc/blob/main/3d_printer_sidechannel_poc.ipynb)
 [![Dataset: Zenodo](https://img.shields.io/badge/dataset-Zenodo%2013329934-blue.svg)](https://zenodo.org/records/13329934)
 
-Analysis pipeline for the IEEE Access manuscript **"Side-Channel Attacks Survive Noise Cancellation in 3D Printers"** (Access-2026-31368) — a duration-controlled evaluation of acoustic and vibration side-channel leakage on FDM 3D printers equipped with Active Motor Noise Cancellation (AMNC).
+A duration-controlled evaluation of acoustic and vibration side-channel leakage on FDM 3D printers equipped with Active Motor Noise Cancellation (AMNC).
 
 AMNC is treated throughout as a **noise-reduction feature**. We located no patent, firmware documentation, or engineering statement connecting it to emanation suppression, and make no claim about vendor design intent.
 
@@ -99,18 +99,18 @@ The notebook downloads the dataset from Zenodo automatically.
 
 ## Notebook structure
 
-`3d_printer_sidechannel_poc.ipynb` — each stage is **standalone**: it rebuilds its own catalog, extracts its own features, and writes structured JSON. Stages run independently, in any order. Stored outputs are preserved, so the printed values match the manuscript without re-running.
+`3d_printer_sidechannel_poc.ipynb` — each stage is **standalone**: it rebuilds its own catalog, extracts its own features, and writes structured JSON. Stages run independently, in any order. Stored outputs are preserved, so the printed values match the results reported above without re-running.
 
-| Stage | Produces | Manuscript |
-|---|---|---|
-| 1 · Acoustic | window sweep, truncation audit, notch sweep, permutation tests | §VI-A, Table 2, Fig. 1 |
-| 2 · Main analysis | duration, vibration, per-configuration, per-printer, transfer, temporal | §VI-B/C/E/F/G |
-| 3 · G-code ground truth | recording duration vs sliced print time | §VI-B, Fig. 2 |
-| 4 · Spectral verification | motor-band suppression vs background (+ exploratory) | §VI-H, Fig. 5 |
-| 5 · Duration controls | T1, fixed-offset window, T2, T3 | §VI-D, Table 3 |
-| 6 · Figures | the five manuscript figures | Figs. 1–5 |
+| Stage | Produces |
+|---|---|
+| 1 · Acoustic | window sweep, truncation audit, notch sweep, permutation tests |
+| 2 · Main analysis | duration, vibration, per-configuration, per-printer, transfer, temporal |
+| 3 · G-code ground truth | recording duration vs sliced print time |
+| 4 · Spectral verification | motor-band suppression vs background (+ exploratory) |
+| 5 · Duration controls | T1, fixed-offset window, T2, T3 |
+| 6 · Figures | the five summary figures |
 
-Stage 4 also contains exploratory analyses (duration-stratified classification, acoustic window position, per-configuration acoustic split). These motivated Stage 5 and are kept for transparency; **only the spectral result is reported in the manuscript.**
+Stage 4 also contains exploratory analyses (duration-stratified classification, acoustic window position, per-configuration acoustic split). These motivated Stage 5 and are kept for transparency; **only the spectral result is reported above.**
 
 ```
 ├── 3d_printer_sidechannel_poc.ipynb
