@@ -1,0 +1,31 @@
+{
+  "fig1": {
+    "10 s": 6.94,
+    "30 s": 11.11,
+    "60 s": 27.08,
+    "120 s": 30.56,
+    "300 s": 31.25,
+    "8 x 30 s\ndistributed": 40.28
+  },
+  "fig2": {
+    "r": 0.9073,
+    "n": 144
+  },
+  "fig3": {
+    "All features\n(full recording)": 29.17,
+    "All features\n(window equalized)": 22.22,
+    "Amplitude\nonly": 26.39,
+    "Frequency (Hz)\nonly": 9.03
+  },
+  "fig4": {
+    "Bambu A1 Mini\n(bed-slinger)": 13.89,
+    "Bambu P1P\n(core-XY)": 36.11,
+    "A1mini\n$\\rightarrow$ P1P": 8.33,
+    "P1P\n$\\rightarrow$ A1mini": 13.89
+  },
+  "fig5": {
+    "print_dB": 9.25,
+    "noise_dB": 4.33,
+    "difference_dB": 4.92
+  }
+}
